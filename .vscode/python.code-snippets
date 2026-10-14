@@ -1,0 +1,126 @@
+{
+	"Graph input": {
+		"prefix": "graph input",
+		"body": [
+			"G = [[] for _ in range(N+1)]",
+			"for i in range(M):",
+			"\tu,v = LI()",
+			"\tG[u].append(v)",
+			"\tG[v].append(u)"
+		],
+		"description": "graph input",
+		"scope": "python"
+	},
+	"Grid traverse": {
+		"prefix": "Grid traverse",
+		"body": [
+			"for i in range(${1:H}):",
+			"\tfor j in range(${2:W}):",
+			"\t\tfor k in range(4):",
+			"\t\t\tdi,dj = i + dx[k], j + dx[k+1]",
+			"\t\t\tif not (0 <= di < H and 0 <= dj < W): continue"
+		],
+		"description": "Grid traverse",
+		"scope": "python"
+	},
+	"Run Length Encoding": {
+		"prefix": "Run Length Encoding",
+		"body": [
+			"rle = [(x, len(list(c))) for x, c in groupby(${1: X})]"
+		],
+		"description": "Run Length Encoding",
+		"scope": "python"
+	},
+	"bisect lt": {
+		"prefix": "bisect lt",
+		"body": [
+			"bisect_left(${1: A}, ${2: x}) - 1"
+		],
+		"description": "find the largest element's index < x",
+		"scope": "python"
+	},
+	"bisect le": {
+		"prefix": "bisect le",
+		"body": [
+			"bisect_right(${1: A}, ${2: x}) - 1"
+		],
+		"description": "find the largest element's index <= x",
+		"scope": "python"
+	},
+	"bisect gt": {
+		"prefix": "bisect gt",
+		"body": [
+			"bisect_right(${1: A}, ${2: x})"
+		],
+		"description": "find the smallest element's index > x",
+		"scope": "python"
+	},
+	"bisect ge": {
+		"prefix": "bisect ge",
+		"body": [
+			"bisect_left(${1: A}, ${2: x})"
+		],
+		"description": "find the smallest element's index >= x",
+		"scope": "python"
+	},
+	"mod 998244353": {
+		"prefix": "mod = 998244353",
+		"body": [
+			"mod = 998244353"
+		],
+		"scope": "python"
+	},
+	"mod_inv": {
+		"prefix": "def mod_inv",
+		"body": [
+			"def mod_inv(a):",
+			"\treturn pow(a, mod-2, mod)"
+		],
+		"scope": "python"
+	},
+	"setrecursionlimit": {
+		"prefix": "setrecursionlimit",
+		"body": [
+			"from sys import setrecursionlimit",
+			"setrecursionlimit(10**7)"
+		],
+		"scope": "python"
+	},
+	"output string": {
+		"prefix": "output string",
+		"body": [
+			"print(\"\".join(map(str, ${1:X})))"
+		],
+		"scope": "python"
+	},
+	"import string": {
+		"prefix": "import string",
+		"body": [
+			"from string import ascii_lowercase, ascii_uppercase",
+			"ascii2int = {ascii_lowercase[i]: i for i in range(26)}"
+		],
+		"scope": "python"
+	},
+	"LSB": {
+		"prefix": "LSB",
+		"body": [
+			"x&-x"
+		],
+		"scope": "python"
+	},
+	"UDLR direction": {
+		"prefix": "UDLR direction",
+		"body": [
+			"dir4 = {\"U\": (-1,0), \"D\": (1,0), \"L\": (0,-1), \"R\": (0,1)}",
+			"dir8 = {\"UL\": (-1,-1), \"UR\": (-1,1), \"DL\": (1,-1), \"DR\": (1,1)}"
+		],
+		"scope": "python"
+	},
+	"compress": {
+		"prefix": "compress",
+		"body": [
+			"compress = {v:i for i,v in enumerate(sorted(set(${1:X})))}"
+		],
+		"scope": "python"
+	}
+}
