@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/Tree/BinaryTrie.py
 # https://ikatakos.com/pot/programming_algorithm/data_structure/trie
 # 使ったことない
 

@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/グラフ/Edge_Contraction.py
 import sys
 input = sys.stdin.readline
 def LI(): return list(map(int, input().split()))

@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/探索/binary_search.py
 # 半開区間[ok,ng) or (ng,ok]　が探索範囲　=　okの範囲
 # okとngが隣だったらokが一つに定まる
 

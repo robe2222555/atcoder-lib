@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/Mo's_Algorithm.py
 # 参考: https://snuke.hatenablog.com/entry/2016/07/01/000000
 
 # ---- Mo's algorithm ----

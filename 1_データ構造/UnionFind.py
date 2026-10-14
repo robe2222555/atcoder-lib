@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/UnionFind.py
 class UnionFind():
 	def __init__(self, n):
 		"0-base index"

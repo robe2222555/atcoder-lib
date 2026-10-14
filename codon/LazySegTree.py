@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/codon/LazySegTree.py
 """
 codon 用の遅延セグ木
 

@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/3_数学/整数/素数関係.py
 def LI(): return list(map(int, input().split()))
 def II(): return int(input())
 

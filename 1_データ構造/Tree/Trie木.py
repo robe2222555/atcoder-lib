@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/Tree/Trie木.py
 
 from collections import defaultdict
 import string

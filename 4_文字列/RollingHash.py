@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/4_文字列/RollingHash.py
 """
 Docstring for lib.3_文字列.RollingHash
 

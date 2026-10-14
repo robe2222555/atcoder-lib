@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/WeightedUF.py
 """
 Weighted Union-find
 https://qiita.com/drken/items/cce6fc5c579051e64fab

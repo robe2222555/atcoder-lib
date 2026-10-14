@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/SCC.py
 # ======================
 #  "非"再帰実装
 # verified by https://www.share-oj.net/problems/03ab3a91-31a5-43f0-b3fb-bd5329ed7d66

@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/2次元いもす法.py
 def LI(): return list(map(int, input().split()))
 def II(): return int(input())
 

@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/探索/ternary_search.py
 # ABC426 E
 # 三分探索
 

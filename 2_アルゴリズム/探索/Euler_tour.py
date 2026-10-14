@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/探索/Euler_tour.py
 #######
 # オイラーツアーの非再帰実装
 # 参考: https://qiita.com/Kiri8128/items/2b0023bed9af642c751c

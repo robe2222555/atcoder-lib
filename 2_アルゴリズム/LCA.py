@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/LCA.py
 
 """
 https://blog.hamayanhamayan.com/entry/2017/05/03/131624

@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/区間/IntervalSet/non_count_IntervalSet.py
 """
 - verified by ABC435E (add, count_covered)
 - verified by ABC330E (add, erase, mex) 

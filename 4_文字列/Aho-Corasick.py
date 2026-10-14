@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/4_文字列/Aho-Corasick.py
 from collections import deque
 
 class AhoCorasick:

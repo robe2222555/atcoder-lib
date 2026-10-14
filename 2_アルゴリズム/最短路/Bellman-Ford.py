@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/最短路/Bellman-Ford.py
 # https://kuruton.hatenablog.com/entry/2020/11/23/080000
 
 def LI(): return list(map(int, input().split()))

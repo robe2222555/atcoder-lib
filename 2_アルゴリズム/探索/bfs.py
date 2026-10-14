@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/探索/bfs.py
 def LI(): return list(map(int, input().split()))
 from collections import deque
 N,M=LI()

@@ -6,3 +6,6 @@ macro.md
 
 # debug は公開しない
 debug/
+
+# Python のキャッシュ
+__pycache__/

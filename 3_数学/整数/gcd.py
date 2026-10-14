@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/3_数学/整数/gcd.py
 ########################################
 # 自作ライブラリより math.gcd の方が早い
 #

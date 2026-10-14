@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/全域木/prim法.py
 # あり本
 def LI(): return list(map(int, input().split()))
 def II(): return int(input())

@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/探索/bit全探索.py
 N=0
 
 for i in range(2**N):

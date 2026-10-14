@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/3_数学/整数/分割数pk(n).py
 
 # https://manabitimes.jp/math/888
 # 「整数nをk分割する通り」＝「最大がkであるいくつかの分割の通り」

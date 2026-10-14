@@ -1,3 +1,4 @@
+# https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/Hash/ZobristHash.py
 """
 	Zobrist Hash
 	set ならば，各ハッシュ値の xor を取る
