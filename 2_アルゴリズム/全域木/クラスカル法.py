@@ -1,8 +1,7 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/全域木/クラスカル法.py
-def LI(): return list(map(int, input().split()))
-def II(): return int(input())
 
-""" クラスカル法
+"""
+クラスカル法
 全ての辺をコスト昇順にみて, 閉路ができなければ追加する
 追加する頂点をUnionFindで管理し閉路ができるか判定
 最初の辺の昇順ソートが一番計算量が重たく　O(ElogE)
@@ -10,6 +9,7 @@ def II(): return int(input())
 無向辺の閉路検出ー>UnionFind
 有向辺の閉路ー>トポロジカルソートでDAGをつくる
 """
+
 class UnionFind():
 	# n要素で初期化
 	def __init__(self, n):

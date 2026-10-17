@@ -1,7 +1,7 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/2_アルゴリズム/最短路/Warshall-Floyd.py
-def LI(): return list(map(int, input().split()))
-def II(): return int(input())
-"""     全点対最短路問題
+
+"""
+全点対最短路問題
 任意の頂点対 (i,j)について, i~jの最短路を求める
 
 ワーシャルフロイド法 計算量 O(V^3)

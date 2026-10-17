@@ -16,8 +16,6 @@ AtCoder 用の個人ライブラリ（主に Python）です。
 | [2_アルゴリズム](2_アルゴリズム) | 最短路、全域木、SCC、LCA、探索、Mo's algorithm など |
 | [3_数学](3_数学) | 幾何、組み合わせ、整数、行列 |
 | [4_文字列](4_文字列) | RollingHash、Aho-Corasick など |
-| [ACL_usage](ACL_usage) | AtCoder Library (CC0) の使用例 |
-| [codon](codon) | Codon 用のコード |
 | [template](template) | 提出用テンプレート |
 | [third_party](third_party) | 他の人が作成したコード|
 | [.vscode](.vscode) | VS Code のスニペット（[python.code-snippets](.vscode/python.code-snippets)） |

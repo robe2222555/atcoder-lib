@@ -1,4 +1,5 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/区間/SparseTable_LCA.py
+
 def bl(a):
 	res = 0
 	while a>0:

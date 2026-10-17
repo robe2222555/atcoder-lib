@@ -1,8 +1,6 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/区間/MergeSortTree.py
-#
-# 以下の実装は x 以下の総和を求めるver
 # verified by ABC339G
-#
+# 以下の実装は x 以下の総和を求めるver
 
 from bisect import bisect_left, bisect_right
 def merge(A,B):

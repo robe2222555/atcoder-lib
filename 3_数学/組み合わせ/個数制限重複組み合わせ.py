@@ -1,5 +1,4 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/3_数学/組み合わせ/個数制限重複組み合わせ.py
-
 # 個数制限ありの重複組み合わせ
 # i番目のものがA[i]個あるときにj個とる組み合わせ
 # O(nm)

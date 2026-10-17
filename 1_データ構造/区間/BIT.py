@@ -1,6 +1,7 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/区間/BIT.py
 # 内部は 1-indexed実装だけど，インターフェイスは 0-base
 # codon でも可能
+
 class BIT:
 	def __init__(self, n):
 		self.n = n              # 要素数

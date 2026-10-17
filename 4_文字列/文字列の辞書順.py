@@ -2,7 +2,6 @@
 # ord("A") : Unicodeのコードを返す
 # A:65 ~ Z:90   a:97~z:122   26文字
 
-
 base=ord("A")
 def Dictionary(S, mod=1):
 	"""

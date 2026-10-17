@@ -1,4 +1,6 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/Tree/HL_decomposition.py
+# 参考: https://info.atcoder.jp/entry/algorithm_lectures/heavy_light_decomposition
+
 class HeavyLightDecomposition:
 	def __init__(self,G):
 		self.G = G

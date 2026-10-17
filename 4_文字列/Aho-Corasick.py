@@ -1,4 +1,6 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/4_文字列/Aho-Corasick.py
+# 参考: https://ikatakos.com/pot/programming_algorithm/string_search
+
 from collections import deque
 
 class AhoCorasick:

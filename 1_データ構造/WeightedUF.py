@@ -1,11 +1,7 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/WeightedUF.py
-"""
-Weighted Union-find
-https://qiita.com/drken/items/cce6fc5c579051e64fab
-
-https://atcoder.jp/contests/abc087/tasks/arc090_b
-"""
-
+# 参考: https://qiita.com/drken/items/cce6fc5c579051e64fab
+# verified by https://atcoder.jp/contests/abc087/tasks/arc090_b
+# Weighted Union-find
 
 class WeightedUF():
 	# n要素で初期化

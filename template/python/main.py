@@ -1,4 +1,5 @@
-# https://github.com/robe2222555/atcoder-lib/blob/main/template/temp_python.py
+# https://github.com/robe2222555/atcoder-lib/blob/main/template/python/main.py
+
 import sys
 input = lambda: sys.stdin.readline().rstrip()
 def LI(): return list(map(int, input().split()))

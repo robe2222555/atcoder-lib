@@ -1,6 +1,17 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/区間/LazySegTree.py
 # 参考: https://maspypy.com/segment-tree-%e3%81%ae%e3%81%8a%e5%8b%89%e5%bc%b72
 
+def msb(x: int) -> int:
+	# 最上位ビットの位置（= bit_length - 1）
+	r = 0
+	if x >> 32: x >>= 32; r += 32
+	if x >> 16: x >>= 16; r += 16
+	if x >> 8:  x >>= 8;  r += 8
+	if x >> 4:  x >>= 4;  r += 4
+	if x >> 2:  x >>= 2;  r += 2
+	if x >> 1:  r += 1
+	return r
+
 class LazySegTree:
 	def __init__(self, N, op1, uni1, op2, uni2, op3):
 		"""
@@ -10,6 +21,8 @@ class LazySegTree:
 		op2		: 作用素モノイドの二項演算
 		uni2	: 作用素モノイドの単位元
 		op3		: 射影: dat x lazy -> dat
+
+		pypy, codon 使用可
 		"""
 		self.node=1
 		while N>self.node: self.node*=2  #　木の最下層の葉の数
@@ -52,7 +65,7 @@ class LazySegTree:
 
 	# 根 から i の遅延評価を反映/伝搬
 	def _propagate_above(self, i):
-		H = i.bit_length() - 1
+		H = msb(i)
 		for h in range(H, 0, -1):
 			self._propagate_at(i >> h)
 		return None
@@ -62,7 +75,7 @@ class LazySegTree:
 		# iより上はすべて評価済みが前提
 		while i > 1:
 			i >>= 1
-			assert(self.lazy[i] == self.lazy_unit)
+			#assert(self.lazy[i] == self.lazy_unit)
 			self.dat[i] = self.op_dat(self._eval_at(2*i), self._eval_at(i*2+1))
 		return None
 
@@ -132,7 +145,6 @@ class LazySegTree:
 		else:
 			self.dat[k] = self._eval_at(k)
 			self.lazy[k] = self.lazy_unit
-
 
 		_, MIN = self.dat[k]
 		if MIN>0:

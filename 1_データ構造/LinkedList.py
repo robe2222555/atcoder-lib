@@ -1,9 +1,6 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/LinkedList.py
-#
-# 双方向リスト
 # verified by ABC344E
-#
-
+# 双方向リスト
 
 from collections import defaultdict
 

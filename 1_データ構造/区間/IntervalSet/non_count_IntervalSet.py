@@ -1,9 +1,7 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/区間/IntervalSet/non_count_IntervalSet.py
-"""
-- verified by ABC435E (add, count_covered)
-- verified by ABC330E (add, erase, mex) 
-- verified by code-festival-2015-qualb D (add, get, contains)
-"""
+# verified by ABC435E (add, count_covered)
+# verified by ABC330E (add, erase, mex)
+# verified by code-festival-2015-qualb D (add, get, contains)
 
 # https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py
 # SortedSet は tatyam-prime 氏作 (Unlicense / パブリックドメイン) をそのまま使用

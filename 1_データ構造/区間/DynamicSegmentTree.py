@@ -1,4 +1,5 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/区間/DynamicSegmentTree.py
+
 class Node:
 	__slots__ = ('left', 'right', 'val')
 
@@ -80,87 +81,6 @@ class DynamicSegmentTree:
 			vL = parent.left.val  if parent.left  is not None else self.dat_unit
 			vR = parent.right.val if parent.right is not None else self.dat_unit
 			parent.val = self.operate(vL, vR)
-
-	def __repr__(self):
-		return "DynamicSeg: U={}".format(self.U)
-
-	###################################
-
-
-
-
-
-
-
-
-
-
-
-class Node:
-	__slots__ = ('left', 'right', 'val')
-
-	def __init__(self, val):
-		self.left = None
-		self.right = None
-		self.val = val
-
-
-class DynamicSegmentTree:
-	dat_unit = 1<<30      # セグ木の単位元
-
-	def __init__(self, U):
-		"""
-		U : 値域のサイズ．添字は [0, U) を扱う
-		root : 木の根．必要になったノードだけ遅延生成される
-		"""
-		self.U = U
-		self.root = Node(self.dat_unit)
-		return
-
-	def operate(self, x, y):
-		return min(x, y)
-
-	def query(self, a, b):
-		"""
-		区間 [a, b) の集約値を返す
-		a, b は 0-based index
-		"""
-		return self._query(self.root, 0, self.U, a, b)
-
-	def _query(self, node, l, r, a, b):
-		if node is None or b <= l or r <= a:
-			return self.dat_unit
-		if a <= l and r <= b:
-			return node.val
-		mid = (l + r) // 2
-		vL = self._query(node.left,  l,   mid, a, b)
-		vR = self._query(node.right, mid, r,   a, b)
-		return self.operate(vL, vR)
-
-	def add(self, a, val, replace=False):
-		"""
-		dat[a] に val を作用
-		a は 0-based index
-		replace=True で値を書き換える
-		"""
-		self.root = self._add(self.root, 0, self.U, a, val, replace)
-		return None
-
-	def _add(self, node, l, r, a, val, replace):
-		if node is None:
-			node = Node(self.dat_unit)
-		if r - l == 1:
-			node.val = val if replace else self.operate(node.val, val)
-			return node
-		mid = (l + r) // 2
-		if a < mid:
-			node.left  = self._add(node.left,  l,   mid, a, val, replace)
-		else:
-			node.right = self._add(node.right, mid, r,   a, val, replace)
-		vL = node.left.val  if node.left  is not None else self.dat_unit
-		vR = node.right.val if node.right is not None else self.dat_unit
-		node.val = self.operate(vL, vR)
-		return node
 
 	def __repr__(self):
 		return "DynamicSeg: U={}".format(self.U)

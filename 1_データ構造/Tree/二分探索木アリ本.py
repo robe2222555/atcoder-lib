@@ -1,11 +1,8 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/1_データ構造/Tree/二分探索木アリ本.py
-
 # insert, find, remove がO(logN)
 # 木が偏ることがあるため，最悪時間O(N)
-#
 # 別の方法として，listをソートしてbisectで検索
 # しかし挿入がO(N)
-
 
 # ノードを表す構造体
 # valが値，lchとrchはそれぞれnodeで宣言する

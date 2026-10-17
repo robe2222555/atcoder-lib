@@ -1,6 +1,5 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/3_数学/組み合わせ/組み合わせ列挙.py
 
-
 L=[1,2,33,4]
 
 # 順列列挙

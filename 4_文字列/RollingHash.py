@@ -1,12 +1,8 @@
 # https://github.com/robe2222555/atcoder-lib/blob/main/4_文字列/RollingHash.py
-"""
-Docstring for lib.3_文字列.RollingHash
-
-文字列の prefix S[1..i] のハッシュ値を求める
-
-verified by ABC141E
-"""
-
+# 参考: https://qiita.com/hirominn/items/80464ee381c8d400725f
+# 参考: https://qiita.com/keymoon/items/11fac5627672a6d6a9f6
+# verified by ABC141E
+# 文字列の prefix S[1..i] のハッシュ値を求める
 
 class RollingHash:
 	def __init__(self, S:str, base:int = 131, mod:int = 10**9+7):
