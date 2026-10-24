@@ -122,5 +122,12 @@
 			"compress = {v:i for i,v in enumerate(sorted(set(${1:X})))}"
 		],
 		"scope": "python"
+	},
+	"check boundary": {
+		"prefix": "check boundary",
+		"body": [
+			"if not (0<=nr<H and 0<=nc<W): continue"
+		],
+		"scope": "python"
 	}
 }
