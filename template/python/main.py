@@ -3,6 +3,7 @@ import sys
 input = lambda: sys.stdin.readline().rstrip()
 def LI(): return list(map(int, input().split()))
 def II(): return int(input())
+INF = 1<<60
 
 
 def solve():
