@@ -19,23 +19,22 @@ class LowestCommonAncestor:
 
 	def add_edge(self, u, v):
 		self.G[u].append(v)
-		self.G[v].append(u)
 	
 	def build(self, root):
 		"""
 		O(N \log N)
 		"""
 		self.root=root
-		q=[root]
+		stk=[root]
 		self.Depth=[-1]*(self.N+1)
 		self.Depth[root]=0
-		while q:
-			u = q.pop()
+		while stk:
+			u = stk.pop()
 			for v in self.G[u]:
 				if self.Depth[v]<0:
 					self.Depth[v]=self.Depth[u]+1
 					self.par[0][v]=u
-					q.append(v)
+					stk.append(v)
 
 		for k in range(self.msb):
 			for v in range(1, self.N+1):

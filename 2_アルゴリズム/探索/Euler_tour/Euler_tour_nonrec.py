@@ -8,8 +8,8 @@
 def Euler_tour(G, N, root = 1):
 	pre = [-1]*(N+1)
 	post = [-1]*(N+1)
-	prepost = []
-	traverse = []
+	prepost = []	# preとpostで一回ずつの頂点列
+	traverse = []	# dfsでたどる頂点列
 
 	par = [-1]*(N+1)
 	stk = [~root, root]
@@ -26,7 +26,7 @@ def Euler_tour(G, N, root = 1):
 			for v in G[u]:
 				if pre[v]>=0: continue	# visitの代わり
 				par[v] = u
-				stk.append(~v)
+				stk.append(~v)	# stk.append(~u) にすれば，stkがtraverse列になる
 				stk.append(v)
 		else:
 			u = ~u
